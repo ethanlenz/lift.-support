@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Security: strict CSP — no scripts, no external resources, no frames. -->
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Support for lift. — the workout journal for iPhone.">
+  <title>lift. — Support</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #ffffff;
+      --card: #f5f5f7;
+      --text: #111111;
+      --secondary: #6e6e73;
+      --blue: #007aff;
+      --border: rgba(0, 0, 0, 0.08);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #000000;
+        --card: #1c1c1e;
+        --text: #ffffff;
+        --secondary: #98989e;
+        --border: rgba(255, 255, 255, 0.12);
+      }
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: ui-rounded, -apple-system, "SF Pro Rounded", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 48px 20px 32px;
+    }
+    main { width: 100%; max-width: 560px; }
+    .logo {
+      font-size: 56px;
+      font-weight: 800;
+      letter-spacing: -1px;
+      text-align: center;
+    }
+    .logo span { color: var(--blue); }
+    .tagline {
+      text-align: center;
+      color: var(--secondary);
+      font-size: 17px;
+      font-weight: 600;
+      margin: 6px 0 40px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 24px;
+      margin-bottom: 16px;
+    }
+    .card h2 {
+      font-size: 15px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      color: var(--secondary);
+      margin-bottom: 12px;
+    }
+    .card p { font-size: 16px; line-height: 1.5; }
+    .button {
+      display: block;
+      text-align: center;
+      background: var(--blue);
+      color: #fff;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: 700;
+      padding: 15px;
+      border-radius: 999px;
+      margin-top: 16px;
+    }
+    .button:active { opacity: 0.8; }
+    .email {
+      text-align: center;
+      color: var(--secondary);
+      font-size: 14px;
+      margin-top: 10px;
+      word-break: break-all;
+    }
+    details {
+      border-top: 1px solid var(--border);
+      padding: 14px 0;
+    }
+    details:first-of-type { border-top: none; padding-top: 4px; }
+    summary {
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      list-style-position: inside;
+    }
+    details p {
+      color: var(--secondary);
+      font-size: 15px;
+      padding: 10px 2px 2px;
+    }
+    .links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin: 8px 0 28px;
+    }
+    .links a {
+      color: var(--blue);
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 600;
+    }
+    footer {
+      margin-top: auto;
+      color: var(--secondary);
+      font-size: 13px;
+      text-align: center;
+      padding-top: 28px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1 class="logo">lift<span>.</span></h1>
+    <p class="tagline">Support</p>
+
+    <div class="card">
+      <h2>Contact Us</h2>
+      <p>Questions, bug reports, or feedback about lift.? Email us and we’ll get back to you as soon as we can.</p>
+      <a class="button" href="mailto:liftyiosapp@gmail.com?subject=lift.%20Support">Email Support</a>
+      <p class="email">liftyiosapp@gmail.com</p>
+    </div>
+
+    <div class="card">
+      <h2>Common Questions</h2>
+      <details>
+        <summary>How do I manage or cancel my lift+ subscription?</summary>
+        <p>Subscriptions are handled by Apple. Open Settings on your iPhone → tap your name → Subscriptions → lift. You can also manage billing from lift. under Settings → Billing.</p>
+      </details>
+      <details>
+        <summary>Is my workout data backed up?</summary>
+        <p>Your data lives on your device. If you create a profile with Sign in with Apple, your workouts, records, and stats sync securely to your private iCloud.</p>
+      </details>
+      <details>
+        <summary>How do I restore a purchase?</summary>
+        <p>Open the lift+ paywall in the app and tap “Restore.” Make sure you’re signed in to the same Apple Account used for the original purchase.</p>
+      </details>
+      <details>
+        <summary>How do I delete my data or account?</summary>
+        <p>In lift., go to Settings → Data to clear history or delete all data, and Settings → Account → Delete Account to remove your profile and synced iCloud data.</p>
+      </details>
+    </div>
+
+    <div class="links">
+      <a href="https://app.termly.io/policy-viewer/policy.html?policyUUID=fb0b0f45-0353-4f77-a5c6-fe41954c7387" rel="noopener noreferrer">Privacy Policy</a>
+      <a href="https://app.termly.io/policy-viewer/policy.html?policyUUID=968021ef-1b12-4c3d-af5b-99bb6e3fca85" rel="noopener noreferrer">Terms of Use</a>
+      <a href="https://instagram.com/liftiosapp" rel="noopener noreferrer">Instagram</a>
+      <a href="https://x.com/liftiosapp" rel="noopener noreferrer">X</a>
+    </div>
+
+    <footer>© 2026 Ethan Lenz. lift. is an independent iOS app.</footer>
+  </main>
+</body>
+</html>
